@@ -1,9 +1,11 @@
 # Hazards
+## What this model does
+Model returns a CSV file of the post ID and the hazard probability for each of theses posts. 
 
 ## How to run
+```
 python hazard_detection.py <filename>
-
-Model returns a CSV file of the post ID and the hazard probability for each of theses posts. 
+```
 
 ## Requirements.txt
 Lists the required libraries:
