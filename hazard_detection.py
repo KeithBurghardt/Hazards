@@ -6,7 +6,7 @@ import sklearn
 import matplotlib
 import random
 import pickle as pk
-import os,random
+import os,random,sys
 from scipy.stats import uniform, randint, beta
 from glob import glob
 from sklearn.metrics import auc, accuracy_score, confusion_matrix, mean_squared_error
@@ -56,8 +56,8 @@ def load_data(file):
         data['engagementParentId'] = engagementParentIds
     return data
 
-def main(**args):
-    file = args[0]
+def main(argv):
+    file = argv[0]
     data = load_data(file)
     text_col = 'contentText'
     if 'contentText' not in twitter_data.columns:
@@ -84,3 +84,7 @@ def main(**args):
         twitter_data['id'] = twitter_data[c]
     twitter_data['id'] = twitter_data['id'].astype(str)
     twitter_data[['id','hazard']].to_csv(file[:-4]+'_hazards.csv',index=False)
+
+if __name__ == "__main__":
+   main(sys.argv[1:])
+            
