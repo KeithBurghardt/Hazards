@@ -20,7 +20,7 @@ Lists the required libraries:
 ## finalized_model_SVM.sav
 The hazard detection model trained on ~1300 tweets with known hazards. This is a multilingual model (it works for any major language).
 
-## Survey.docx
+## Hazard_guidelines.docx
 
 These are the questions asked to annotators. We have 3 annotators per tweet (all tweets were in English and chosen among a random set of tweets containing hazard words).
 
