@@ -60,16 +60,16 @@ def main(argv):
     file = argv[0]
     data = load_data(file)
     text_col = 'contentText'
-    if 'contentText' not in twitter_data.columns:
+    if 'contentText' not in data.columns:
         text_col = 'text'
-    if text_col not in twitter_data.columns: print(file)
-    twitter_data[text_col] = twitter_data[text_col].astype("string")
+    if text_col not in data.columns: print(file)
+    data[text_col] = data[text_col].astype("string")
     all_pred = []
     tweets = []
-    for ii,tweet in enumerate(twitter_data[text_col].values):
+    for ii,tweet in enumerate(data[text_col].values):
         tweets.append(str(tweet))
         if ii % 1000 == 0:
-            print(round(ii/len(twitter_data)*100,2))
+            print(round(ii/len(data)*100,2))
             embeddings = model.encode(tweets)
             pred_prob = list(clf.predict_proba(embeddings)[:,1])
             all_pred+=pred_prob
@@ -78,12 +78,13 @@ def main(argv):
     embeddings = model.encode(tweets)
     pred_prob = list(clf.predict_proba(embeddings)[:,1])
     all_pred+=pred_prob
-    twitter_data['hazard'] = all_pred#[dict_pred[t] if t in set(dict_pred.keys()) else np.nan for t in twitter_data[text_col].values]
-    if 'id' not in twitter_data.columns:
-        c = [col for col in twitter_data.columns if 'id' in col][0]
-        twitter_data['id'] = twitter_data[c]
-    twitter_data['id'] = twitter_data['id'].astype(str)
-    twitter_data[['id','hazard']].to_csv(file[:-4]+'_hazards.csv',index=False)
+    data['hazard'] = all_pred#[dict_pred[t] if t in set(dict_pred.keys()) else np.nan for t in data[text_col].values]
+    if 'id' not in data.columns:
+        c = [col for col in data.columns if 'id' in col][0]
+        data['id'] = data[c]
+    data['id'] = data['id'].astype(str)
+    data[['id','hazard']].to_csv(file[:-4]+'_hazards.csv',index=False)
+
 
 if __name__ == "__main__":
    main(sys.argv[1:])
