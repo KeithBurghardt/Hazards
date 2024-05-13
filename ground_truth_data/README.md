@@ -6,4 +6,8 @@
 - datasheet-for-dataset-template.md: The datasheet (from Datasheets for Datasets by Gebru et al., 2021) for the X posts shown in  AnonymousAnnotations.csv and TweetGT.csv.
 - urbanlegend_dataset_CODER#S.csv: 2014 SNOPES text annotated by each of 7 annotators from Fessler et al., 2014:
 
+## References:
+
 Fessler, D. M., Pisor, A. C., & Navarrete, C. D. (2014). Negatively-biased credulity and the cultural evolution of beliefs. PloS one, 9(4), e95167.
+
+Gebru, T., Morgenstern, J., Vecchione, B., Vaughan, J. W., Wallach, H., Iii, H. D., & Crawford, K. (2021). Datasheets for datasets. Communications of the ACM, 64(12), 86-92.
