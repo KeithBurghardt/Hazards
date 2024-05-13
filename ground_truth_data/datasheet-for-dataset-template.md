@@ -211,53 +211,44 @@ These data are available now.
 
 ### Will the dataset be distributed under a copyright or other intellectual property (IP) license, and/or under applicable terms of use (ToU)?
 
-_If so, please describe this license and/or ToU, and provide a link or other access point to,
-or otherwise reproduce, any relevant licensing terms or ToU, as well as any fees associated
-with these restrictions._
+No.
 
 ### Have any third parties imposed IP-based or other restrictions on the data associated with the instances?
 
-_If so, please describe these restrictions, and provide a link or other access point to, or
-otherwise reproduce, any relevant licensing terms, as well as any fees associated with these
-restrictions._
+No.
 
 ### Do any export controls or other regulatory restrictions apply to the dataset or to individual instances?
 
-_If so, please describe these restrictions, and provide a link or other access point to, or otherwise
-reproduce, any supporting documentation._
+No.
 
 ### Any other comments?
 N/A
 ## Maintenance
 
-_These questions are intended to encourage dataset creators to plan for dataset maintenance
-and communicate this plan with dataset consumers._
+
 
 ### Who is supporting/hosting/maintaining the dataset?
+Metadata will be updated by the author.
 
 ### How can the owner/curator/manager of the dataset be contacted (e.g., email address)?
 
+This is anonymous to preserve the double-blind review.
+
 ### Is there an erratum?
 
-_If so, please provide a link or other access point._
+If there will be any errara, it will be listed in the README.md
 
 ### Will the dataset be updated (e.g., to correct labeling errors, add new instances, delete instances)?
 
-_If so, please describe how often, by whom, and how updates will be communicated to users (e.g., mailing list, GitHub)?_
-
+These data is expected to be static.
 ### If the dataset relates to people, are there applicable limits on the retention of the data associated with the instances (e.g., were individuals in question told that their data would be retained for a fixed period of time and then deleted)?
 
-_If so, please describe these limits and explain how they will be enforced._
-
+N/A
 ### Will older versions of the dataset continue to be supported/hosted/maintained?
 
-_If so, please describe how. If not, please describe how its obsolescence will be communicated to users._
-
+Yes, if these data were to be changed, we will have older versions in a separate folder.
 ### If others want to extend/augment/build on/contribute to the dataset, is there a mechanism for them to do so?
-
-_If so, please provide a description. Will these contributions be validated/verified? If so,
-please describe how. If not, why not? Is there a process for communicating/distributing these
-contributions to other users? If so, please provide a description._
+Yes, other researchers can create a GitHub branch.
 
 ### Any other comments?
 N/A
