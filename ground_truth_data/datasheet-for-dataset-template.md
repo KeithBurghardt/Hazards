@@ -167,7 +167,7 @@ Yes, see TweetGT.csv's "old_text" column.
 
 ### Is the software used to preprocess/clean/label the instances available?
 
-Yes, we use the Python Emoji library (https://pypi.org/project/emoji/). 
+Yes, we use the Python demoji library (https://pypi.org/project/demoji/). 
 
 ### Any other comments?
 N/A
