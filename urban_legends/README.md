@@ -16,3 +16,5 @@ The Encyclopedia of Urban Legends data we collect are of the form:
 - Not used in 2014 (x): confirmation these data were not collected previously, although some ideas could overlap with SNOPES
 - Chpt/page: the chapter and page number
 - Reference/source: where the Encyclopedia says the legend was collected 
+
+datasheet-for-dataset-template.md: We also created a Datasheet from Datasheets for Datasets by Gebru et al., 2021
