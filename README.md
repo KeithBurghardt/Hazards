@@ -16,32 +16,22 @@ Lists the required libraries:
 - scipy==1.10.1
 - sentence_transformers==2.2.2
 - numpy==1.24.4
-## collect_tweets_threats.py
-This code collects the tweets containing threat words for annotations. The threat words come from a threat dictionary (https://www.michelegelfand.com/threat-dictionary), which only contains English words. The equivalent for non-English words has yet to be developed, but could be a translation of these words to a different language (although some words lose their threat meaning in a different language, and alternatively, other words that describe threats or hazards in another language may not exist in this corpus).
 
-## Hazard_guidelines.docx
-These are the questions asked to annotators. We have 3 annotators per tweet (all tweets were in English and chosen among a random set of tweets containing hazard (threat) words).
+## GPT_code
+This contains all code to have GPT annotate tweets or urban legends, as well as summarize all urban legends to under 128 tokens.
+## ground_truth_data
+This contains all code and guidelines for collection and annotation of ground truth X posts, along with the annotated posts and urban legend annotations from Fessler et al., 2014. We also share a datasheet that describes the data.
 
-## annotations.csv
-Ground truth annotations of extracted posts that contain at least one hazard word as discussed in Choi et al., 2022.
+## hazard_detection
+This contains the trained model and the code to predict hazards in JSONL files.
+## israel-hamas_war
+This contains the coordinated network extracted from our analysis of X posts related to the Hamas-Israel war in an edgelist format. The nodes represent hashed usernames. 
+## training_code
+This contains the Jupyter notebook used to train the models
 
-## NegativelyBiasedCredulityPred.ipynb
-
-How the model is trained, as well as data exploration. X posts are listed in this GitHub, while the urban legends from from Fessler et al., 2014.
-
-## finalized_model_SVM.sav
-The hazard detection model trained on ~1300 tweets with known hazards. This is a multilingual model (it works for any major language).
-
-## hazard_detection.py
-Code to annotate text via their hazard probability.
-
-
-## threats.csv
-All English words collected as of late 2022 from https://www.michelegelfand.com/threat-dictionary (Choi et al., 2022).
-
+## urban_legends
+This contains all urban legends collected, including those from Fessler et al., 2014. We also share a datasheet that describes the data.
 
 References:
-
-Choi, Virginia K. and Shrestha, Snehesh and Pan, Xinyue and Gelfand, Michele J. (2022). When danger strikes: A linguistic tool for tracking America’s collective response to threats Proceedings of the National Academy of Sciences:119(4):e2113891119, doi: 10.1073/pnas.2113891119.
 
 Fessler DMT, Pisor AC, Navarrete CD (2014) Negatively-Biased Credulity and the Cultural Evolution of Beliefs. PLoS ONE 9(4): e95167. doi:10.1371/journal.pone.0095167
