@@ -6,6 +6,16 @@ Model returns a CSV file of the post ID and the hazard probability for each of t
 ```
 python hazard_detection.py <filename>
 ```
+## Details of the model, data
+The paper is [here](https://arxiv.org/pdf/2405.17838):
+```
+@article{Burghardt2025_terror,
+author={Keith Burghardt and Daniel M.T. Fessler and Chyna Tang and Anne Pisor and Kristina Lerman},
+Title={Trust and Terror: Hazards in Text Reveal Negatively Biased Credulity and Partisan Negativity Bias},
+Journal = {arXiv preprint: arXiv:2405.17838},
+url = {https://arxiv.org/pdf/2405.1783}
+}
+```
 
 ## Requirements.txt
 Lists the required libraries:
