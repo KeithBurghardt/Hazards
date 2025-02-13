@@ -1,3 +1,4 @@
+## Files:
 - extract_tweets_threat.py: our code to collect tweets that contain words from the threat dictionary. This dictionary is here: - https://www.michelegelfand.com/threat-dictionary
 - extract_tweets_common_words.py: our code to collect tweets that contain common English words based on the top lemmas from https://www.wordfrequency.info/samples.asp
 - Hazard guidelines: text annotators use to detect if a hazard exists 
